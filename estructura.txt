@@ -1,0 +1,30 @@
+src/main/java/com/foro
+    ├── controller
+    │   ├── AuthController.java
+    │   ├── TopicoController.java
+    │   ├── ExceptionHandlerController.java
+    ├── dto
+    │   ├── AuthRequest.java
+    │   ├── AuthResponse.java
+    │   ├── TopicoRequest.java
+    │   ├── TopicoResponse.java
+    ├── model
+    │   ├── Topico.java
+    │   ├── Respuesta.java
+    │   ├── Usuario.java
+    │   ├── Perfil.java
+    │   ├── Curso.java
+    ├── repository
+    │   ├── TopicoRepository.java
+    │   ├── UsuarioRepository.java
+    │   ├── CursoRepository.java
+    ├── security
+    │   ├── JwtAuthenticationFilter.java
+    │   ├── JwtTokenProvider.java
+    │   ├── SecurityConfiguration.java
+    ├── service
+    │   ├── AuthService.java
+    │   ├── TopicoService.java
+    ├── ForoApplication.java
+src/main/resources
+    ├── application.properties
