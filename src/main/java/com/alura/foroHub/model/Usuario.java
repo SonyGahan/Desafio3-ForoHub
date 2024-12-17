@@ -6,8 +6,6 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -33,6 +31,48 @@ public class Usuario {
             inverseJoinColumns = @JoinColumn(name = "perfil_id")
     )
     private List<Perfil> perfiles;
+
+
+    //Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCorreoElectronico() {
+        return correoElectronico;
+    }
+
+    public void setCorreoElectronico(String correoElectronico) {
+        this.correoElectronico = correoElectronico;
+    }
+
+    public String getContraseña() {
+        return contraseña;
+    }
+
+    public void setContraseña(String contraseña) {
+        this.contraseña = contraseña;
+    }
+
+    public List<Perfil> getPerfiles() {
+        return perfiles;
+    }
+
+    public void setPerfiles(List<Perfil> perfiles) {
+        this.perfiles = perfiles;
+    }
 }
 
 

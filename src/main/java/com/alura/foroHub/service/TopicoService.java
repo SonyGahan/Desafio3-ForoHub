@@ -43,13 +43,14 @@ public class TopicoService {
                 .orElseThrow(() -> new ResourceNotFoundException("Curso no encontrado con ID: " + request.cursoId()));
 
         // Crear y guardar el tópico
-        Topico topico = Topico.builder()
-                .titulo(request.titulo())
-                .mensaje(request.mensaje())
-                .estado(request.estado())
-                .autor(autor)
-                .curso(curso)
-                .build();
+        Topico topico = new Topico();
+        topico.setTitulo(request.titulo());
+        topico
+                .setMensaje(request.mensaje());
+        topico.setEstado(request.estado());
+        topico.setAutor(autor);
+        topico.setCurso(curso);
+
 
         topicoRepository.save(topico);
 

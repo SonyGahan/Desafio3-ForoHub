@@ -4,8 +4,6 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -20,6 +18,32 @@ public class Curso {
 
     @Column(nullable = false)
     private String categoria;
+
+
+    //Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
 }
 
 

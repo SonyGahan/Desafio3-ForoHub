@@ -7,8 +7,6 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Entity
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
@@ -40,6 +38,73 @@ public class Topico {
 
     @OneToMany(mappedBy = "topico", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Respuesta> respuestas;
+
+    //Getters and Setters
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getMensaje() {
+        return mensaje;
+    }
+
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
+    }
+
+    public LocalDateTime getFechaCreacion() {
+        return fechaCreacion;
+    }
+
+    public void setFechaCreacion(LocalDateTime fechaCreacion) {
+        this.fechaCreacion = fechaCreacion;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public Usuario getAutor() {
+        return autor;
+    }
+
+    public void setAutor(Usuario autor) {
+        this.autor = autor;
+    }
+
+    public Curso getCurso() {
+        return curso;
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
+    public List<Respuesta> getRespuestas() {
+        return respuestas;
+    }
+
+    public void setRespuestas(List<Respuesta> respuestas) {
+        this.respuestas = respuestas;
+    }
 }
+
+
 
 
