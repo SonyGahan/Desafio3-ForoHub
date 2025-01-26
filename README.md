@@ -28,7 +28,7 @@ La API permite gestionar tópicos, usuarios y respuestas mediante operaciones CR
 
 ### Clonar el repositorio
 ```bash
-$ git clone https://github.com/Dleo11/appForoHub.git
+$ git clone https://github.com/SonyGahan/Desafio3-ForoHub
 $ cd appForoHub
 ```
 
